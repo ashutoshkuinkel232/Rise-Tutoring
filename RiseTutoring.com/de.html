@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RISE Tutoring</title>
+    <link rel="stylesheet" href="integration2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- NAVBAR> SAME FOR EVERY PAGE. -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-leaf"></i> RISE</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/learn.html" class="navbar__links">
+                        Learn
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">
+                        About
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="enrol.html" class="button">
+                        Sign up
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="der__container">
+        <h1>DIFFERENTIAL EQUATIONS</h1>
+        <div class="ytvideo__der">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6o7b9yyhH7k?si=Ny5i6YXNnXpPi9cS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <button class="derq__btn"><a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-differential-equations-new/ab-7-4/quiz/ab-differential-equations-new-quiz-1">TAKE A DIFFERENTIAL EQ QUIZ</a></button>
+        <h3>
+            Differential Equations are mathematical equations that relate some function with its derivatives. They play a crucial role in engineering, physics, economics, and many other disciplines where relationships between variables are expressed in terms of their rates of change.
+            <br>
+            <br><u>What is a Differential Equation?</u>
+            <br>
+                    <br>&ensp;A differential equation is an equation that involves an unknown function and its derivatives.
+                    <br>&ensp;Example: dy/dx = 3x
+                    <br>&ensp;&ensp;&ensp;&bull; This equation relates the derivative of y with respect to x to the variable x itself.
+                    <br>
+                    <br><u>Types of Differential Equations:</u>
+                    <br>
+                    <br>&ensp;1. **Ordinary Differential Equations (ODEs)**: Involves functions of a single variable and their derivatives.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: dy/dx + y = x
+                    <br>
+                    <br>&ensp;2. **Partial Differential Equations (PDEs)**: Involves functions of multiple variables and their partial derivatives.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: ∂u/∂t = α∂²u/∂x² (Heat equation)
+                    <br>
+                    <br>&ensp;3. **Linear Differential Equations**: The dependent variable and its derivatives appear to the power 1.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: d²y/dx² + p(x)dy/dx + q(x)y = r(x)
+                    <br>
+                    <br>&ensp;4. **Nonlinear Differential Equations**: The dependent variable or its derivatives appear to a power other than 1 or are multiplied together.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: dy/dx = y² - x
+                    <br>
+                    <br><u>First-Order Differential Equations:</u>
+                    <br>
+                    <br>&ensp;1. **Separable Equations**: Can be written as f(y)dy = g(x)dx.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: dy/dx = xy
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: Separate and integrate: ∫(1/y) dy = ∫x dx → ln|y| = x²/2 + C → y = ±e^(x²/2 + C)
+                    <br>
+                    <br>&ensp;2. **Linear First-Order Equations**: Can be written as dy/dx + P(x)y = Q(x).
+                    <br>&ensp;&ensp;&ensp;&bull; Example: dy/dx + 3y = 6x
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: Using integrating factor μ(x) = e^(∫P(x) dx) → μ(x) = e^(3x)
+                    <br>&ensp;&ensp;&ensp;&bull; Multiply through by μ(x): e^(3x) dy/dx + 3e^(3x)y = 6xe^(3x)
+                    <br>&ensp;&ensp;&ensp;&bull; Integrate: y e^(3x) = ∫6xe^(3x) dx
+                    <br>&ensp;&ensp;&ensp;&bull; Find y: y = e^(-3x)(2xe^(3x) - 2e^(3x)/9) + C
+                    <br>
+                    <br><u>Second-Order Differential Equations:</u>
+                    <br>
+                    <br>&ensp;1. **Homogeneous Linear Equations**: d²y/dx² + p(x)dy/dx + q(x)y = 0
+                    <br>&ensp;&ensp;&ensp;&bull; Example: d²y/dx² - 3dy/dx + 2y = 0
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: Find characteristic equation: r² - 3r + 2 = 0 → (r-1)(r-2) = 0 → r = 1, 2
+                    <br>&ensp;&ensp;&ensp;&bull; General solution: y = C₁e^(x) + C₂e^(2x)
+                    <br>
+                    <br>&ensp;2. **Nonhomogeneous Linear Equations**: d²y/dx² + p(x)dy/dx + q(x)y = g(x)
+                    <br>&ensp;&ensp;&ensp;&bull; Example: d²y/dx² - y = x
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: Find particular solution y_p and complementary solution y_c
+                    <br>&ensp;&ensp;&ensp;&bull; General solution: y = y_c + y_p
+                    <br>
+                    <br><u>Special Techniques for Solving Differential Equations:</u>
+                    <br>
+                    <br>&ensp;1. **Method of Undetermined Coefficients**: Used for nonhomogeneous linear ODEs with constant coefficients.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: d²y/dx² - 3dy/dx + 2y = e^(x)
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: y_c = C₁e^(x) + C₂e^(2x), guess y_p = Ae^(x)
+                    <br>&ensp;&ensp;&ensp;&bull; Substitute and solve for A: y_p = Ae^(x), y_p' = Ae^(x), y_p'' = Ae^(x)
+                    <br>&ensp;&ensp;&ensp;&bull; Combine: A e^(x) - 3A e^(x) + 2A e^(x) = e^(x) → A = 1
+                    <br>&ensp;&ensp;&ensp;&bull; General solution: y = y_c + y_p = C₁e^(x) + C₂e^(2x) + e^(x)
+                    <br>
+                    <br>&ensp;2. **Variation of Parameters**: Used for nonhomogeneous ODEs.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: y'' + p(x)y' + q(x)y = g(x)
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: y = y_c + y_p
+                    <br>&ensp;&ensp;&ensp;&bull; Assume y_p = u₁y₁ + u₂y₂, where y₁ and y₂ are solutions to the corresponding homogeneous equation.
+                    <br>&ensp;&ensp;&ensp;&bull; Find u₁ and u₂: u₁' y₁ + u₂' y₂ = 0, u₁' y₁' + u₂' y₂' = g(x)
+                    <br>&ensp;&ensp;&ensp;&bull; Solve for u₁ and u₂: u₁' = -y₂g(x)/(y₁y₂' - y₁'y₂), u₂' = y₁g(x)/(y₁y₂' - y₁'y₂)
+                    <br>
+                    <br>&ensp;3. **Laplace Transforms**: Convert differential equations into algebraic equations.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: y'' + y = δ(t - π)
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: Take Laplace transform: L{y'' + y} = L{δ(t - π)}
+                    <br>&ensp;&ensp;&ensp;&bull; Y(s)(s² + 1) = e^(-πs)
+                    <br>&ensp;&ensp;&ensp;&bull; Solve algebraic equation and take inverse Laplace transform to find y(t).
+                    <br>
+                    <br><u>Applications of Differential Equations:</u>
+                    <br>
+                    <br>&ensp;1. **Modeling Physical Systems**:
+                    <br>&ensp;&ensp;&ensp;&bull; Used to model motion, growth, decay, and other physical phenomena.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: Newton's law of cooling: dT/dt = -k(T - Tₐ)
+                    <br>
+                    <br>&ensp;2. **Electrical Circuits**:
+                    <br>&ensp;&ensp;&ensp;&bull; Used to analyze RL, RC, and RLC circuits.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: Voltage in an RL circuit: L(di/dt) + Ri = V(t)
+                    <br>
+                    <br>&ensp;3. **Population Dynamics**:
+                    <br>&ensp;&ensp;&ensp;&bull; Used to model population growth and interactions.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: Logistic growth model: dP/dt = rP(1 - P/K)
+                    <br>
+                    <br><u>Practice Problems:</u>
+                    <br>
+                    <br>1. Solve dy/dx = y cos(x).
+                    <br>2. Find the general solution to d²y/dx² + 4y = 0.
+                    <br>3. Solve the initial value problem: y' + 2y = 3, y(0) = 1.
+                    <br>4. Use Laplace transforms to solve y'' - y = e^(t).
+                    <br>5. Solve the boundary value problem: y'' + y = 0, y(0) = 0, y(π) = 1.
+                    <br>
+                    <br><u>Tips and Tricks:</u>
+                    <br>
+                    <br>&ensp;&bull; Always check if a differential equation can be simplified or solved using basic techniques.
+                    <br>&ensp;&bull; Familiarize yourself with common forms and solutions of differential equations.
+                    <br>&ensp;&bull; Practice using different methods to solve various types of differential equations.
+        </h3>
+    </div>
+
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Algebra</h2>
+                    <a href="factorisation.html">Factorisation</a>
+                    <a href="polynomials.html">Polynomials</a>
+                    <a href="arithmetics.html">Basic Arithmetics</a>
+                    <a href="simplification.html">Simplification</a>
+                    <a href="exponentials.html">Exponentials</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Calculus</h2>
+                    <a href="derivatives.html">Derivatives</a>
+                    <a href="integration.html">Integration</a>
+                    <a href="integration2.html">Further Integration</a>
+                    <a href="de.html">Differential Equations</a>
+                    <a href="limits.html">Limits</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Quiz</h2>
+                    <a href="dq.html">Daily Quiz</a>
+                    <a href="algq.html">Algebra</a>
+                    <a href="calcq.html">Calculus</a>
+                    <a href="trigq.html">Trigonometry</a>
+                    <a href="gmq.html">General Math</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="/">Website</a>
+                    <a href="careers.html">Careers</a>
+                </div>
+            </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><i class="fa-solid fa-leaf"></i>RISE</a>
+                </div>
+                <p class="website__rights">© RISE 2023. All rights reserved </p>
+                <div class="social__icons">
+                    <a href="https://www.facebook.com/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="social__icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/?lang=en" class="social__icon--link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://au.linkedin.com/?trk=guest_homepage-basic_nav-header-logo" class="social__icon--link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/" class="social__icon--link" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <script src="app.js"></script>
+    </body>
+    </html>
+    

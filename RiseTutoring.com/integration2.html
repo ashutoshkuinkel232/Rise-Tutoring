@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RISE Tutoring</title>
+    <link rel="stylesheet" href="integration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- NAVBAR> SAME FOR EVERY PAGE. -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-leaf"></i> RISE</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/learn.html" class="navbar__links">
+                        Learn
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">
+                        About
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="enrol.html" class="button">
+                        Sign up
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="der__container">
+        <h1>FURTHER INTEGRATION</h1>
+        <div class="ytvideo__der">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=EaDfdQ6xi7qHDnpZ&amp;list=PL5KkMZvBpo5BGMtdKDFOIwvbj3oM_TYMl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <button class="derq__btn"><a href="https://xaktly.com/ToughIntegrals.html#google_vignette">TAKE AN INTEGRATION QUIZ</a></button>
+        <h3>
+            Advanced Integration covers more complex techniques and concepts such as integration by parts, trigonometric integrals, and recurrence relationships. These techniques are essential for solving intricate problems in calculus and applied mathematics.
+            <br>
+            <br><u>What is Advanced Integration?</u>
+            <br>
+                    <br>&ensp;Advanced Integration involves more sophisticated methods to evaluate integrals that are not easily solvable by basic rules.
+                    <br>&ensp;Example: Integrals involving products of functions, trigonometric functions, or requiring special substitutions.
+                    <br>
+                    <br><u>Integration by Parts:</u>
+                    <br>
+                    <br>&ensp;1. **Formula**: ∫u dv = uv - ∫v du
+                    <br>&ensp;Example: ∫x e<sup>x</sup> dx
+                    <br>&ensp;&ensp;&ensp;&bull; Let u = x and dv = e<sup>x</sup> dx.
+                    <br>&ensp;&ensp;&ensp;&bull; Then du = dx and v = e<sup>x</sup>.
+                    <br>&ensp;&ensp;&ensp;&bull; Applying the formula: ∫x e<sup>x</sup> dx = x e<sup>x</sup> - ∫e<sup>x</sup> dx = x e<sup>x</sup> - e<sup>x</sup> + C.
+                    <br>
+                    <br><u>Trigonometric Integrals:</u>
+                    <br>
+                    <br>&ensp;2. **Integrals Involving Sine and Cosine**:
+                    <br>&ensp;&ensp;&ensp;&bull; ∫sin<sup>n</sup>(x) dx or ∫cos<sup>n</sup>(x) dx can often be solved using reduction formulas.
+                    <br>&ensp;Example: ∫sin<sup>2</sup>(x) dx
+                    <br>&ensp;&ensp;&ensp;&bull; Using the identity sin<sup>2</sup>(x) = 1/2 - 1/2 cos(2x).
+                    <br>&ensp;&ensp;&ensp;&bull; ∫sin<sup>2</sup>(x) dx = ∫(1/2 - 1/2 cos(2x)) dx = 1/2 ∫dx - 1/2 ∫cos(2x) dx = x/2 - sin(2x)/4 + C.
+                    <br>
+                    <br>&ensp;3. **Integrals Involving Secant and Tangent**:
+                    <br>&ensp;&ensp;&ensp;&bull; ∫sec(x) dx = ln|sec(x) + tan(x)| + C
+                    <br>&ensp;&ensp;&ensp;&bull; ∫tan(x) dx = -ln|cos(x)| + C
+                    <br>&ensp;Example: ∫sec(x) tan(x) dx
+                    <br>&ensp;&ensp;&ensp;&bull; This can be solved directly by recognizing it as the derivative of sec(x).
+                    <br>&ensp;&ensp;&ensp;&bull; ∫sec(x) tan(x) dx = sec(x) + C.
+                    <br>
+                    <br><u>Trigonometric Substitution:</u>
+                    <br>
+                    <br>&ensp;4. **Using Trigonometric Identities to Simplify Integrals**:
+                    <br>&ensp;&ensp;&ensp;&bull; When the integrand involves square roots of quadratic expressions, trigonometric substitution can simplify the problem.
+                    <br>&ensp;Example: ∫dx/√(a<sup>2</sup> - x<sup>2</sup>)
+                    <br>&ensp;&ensp;&ensp;&bull; Substitute x = a sin(θ), dx = a cos(θ) dθ.
+                    <br>&ensp;&ensp;&ensp;&bull; The integral becomes ∫a cos(θ) dθ/√(a<sup>2</sup> - a<sup>2</sup>sin<sup>2</sup>(θ)) = ∫dθ = θ + C = arcsin(x/a) + C.
+                    <br>
+                    <br><u>Recurrence Relationships:</u>
+                    <br>
+                    <br>&ensp;5. **Using Recurrence Formulas for Integrals**:
+                    <br>&ensp;&ensp;&ensp;&bull; Recurrence relationships can simplify the evaluation of integrals involving powers of functions.
+                    <br>&ensp;Example: ∫x<sup>n</sup> e<sup>ax</sup> dx
+                    <br>&ensp;&ensp;&ensp;&bull; This can be solved using integration by parts iteratively.
+                    <br>&ensp;&ensp;&ensp;&bull; ∫x<sup>n</sup> e<sup>ax</sup> dx = (x<sup>n</sup> e<sup>ax</sup>)/a - (n/a) ∫x<sup>n-1</sup> e<sup>ax</sup> dx.
+                    <br>&ensp;&ensp;&ensp;&bull; This relationship allows us to reduce the power of x step by step.
+                    <br>
+                    <br><u>Definite Integrals with Advanced Techniques:</u>
+                    <br>
+                    <br>&ensp;6. **Evaluating Definite Integrals**:
+                    <br>&ensp;&ensp;&ensp;&bull; Use advanced techniques like integration by parts and trigonometric substitution for definite integrals.
+                    <br>&ensp;Example: ∫<sub>0</sub><sup>π/2</sup> x sin(x) dx
+                    <br>&ensp;&ensp;&ensp;&bull; Let u = x and dv = sin(x) dx.
+                    <br>&ensp;&ensp;&ensp;&bull; Then du = dx and v = -cos(x).
+                    <br>&ensp;&ensp;&ensp;&bull; Applying integration by parts: ∫<sub>0</sub><sup>π/2</sup> x sin(x) dx = [-x cos(x)]<sub>0</sub><sup>π/2</sup> + ∫<sub>0</sub><sup>π/2</sup> cos(x) dx = [-(π/2) cos(π/2) + 0] + [sin(x)]<sub>0</sub><sup>π/2</sup> = 0 + 1 = 1.
+                    <br>
+                    <br><u>Applications of Advanced Integration:</u>
+                    <br>
+                    <br>&ensp;1. **Finding Areas and Volumes**:
+                    <br>&ensp;&ensp;&ensp;&bull; Use advanced integration techniques to find areas and volumes of more complex shapes.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: Finding the volume of a solid of revolution using advanced techniques.
+                    <br>
+                    <br>&ensp;2. **Solving Complex Differential Equations**:
+                    <br>&ensp;&ensp;&ensp;&bull; Advanced integration is used to solve more complex differential equations.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: Solving second-order differential equations using integration.
+                    <br>
+                    <br>&ensp;3. **Evaluating Improper Integrals**:
+                    <br>&ensp;&ensp;&ensp;&bull; Techniques such as partial fractions and trigonometric substitution are used for improper integrals.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: ∫<sub>0</sub><sup>∞</sup> e<sup>-x</sup> dx
+                    <br>&ensp;&ensp;&ensp;&bull; This integral converges to 1.
+                    <br>
+                    <br><u>Practice Problems:</u>
+                    <br>
+                    <br>1. Evaluate ∫x<sup>2</sup> e<sup>x</sup> dx using integration by parts.
+                    <br>2. Find ∫sec<sup>3</sup>(x) dx.
+                    <br>3. Evaluate ∫dx/(x<sup>2</sup> + a<sup>2</sup>) using trigonometric substitution.
+                    <br>4. Use recurrence relations to evaluate ∫x<sup>3</sup> e<sup>x</sup> dx.
+                    <br>5. Find the volume of the solid formed by rotating y = x<sup>2</sup> + 1 about the x-axis from x = 0 to x = 2.
+                    <br>
+                    <br><u>Tips and Tricks:</u>
+                    <br>
+                    <br>&ensp;&bull; Break down complex integrals into simpler parts using advanced techniques.
+                    <br>&ensp;&bull; Familiarize yourself with trigonometric identities and substitutions.
+                    <br>&ensp;&bull; Practice solving integrals using recurrence relationships to handle higher powers.
+        </h3>
+    </div>
+
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Algebra</h2>
+                    <a href="factorisation.html">Factorisation</a>
+                    <a href="polynomials.html">Polynomials</a>
+                    <a href="arithmetics.html">Basic Arithmetics</a>
+                    <a href="simplification.html">Simplification</a>
+                    <a href="exponentials.html">Exponentials</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Calculus</h2>
+                    <a href="derivatives.html">Derivatives</a>
+                    <a href="integration.html">Integration</a>
+                    <a href="integration2.html">Further Integration</a>
+                    <a href="de.html">Differential Equations</a>
+                    <a href="limits.html">Limits</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Quiz</h2>
+                    <a href="dq.html">Daily Quiz</a>
+                    <a href="algq.html">Algebra</a>
+                    <a href="calcq.html">Calculus</a>
+                    <a href="trigq.html">Trigonometry</a>
+                    <a href="gmq.html">General Math</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="/">Website</a>
+                    <a href="careers.html">Careers</a>
+                </div>
+            </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><i class="fa-solid fa-leaf"></i>RISE</a>
+                </div>
+                <p class="website__rights">© RISE 2023. All rights reserved </p>
+                <div class="social__icons">
+                    <a href="https://www.facebook.com/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="social__icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/?lang=en" class="social__icon--link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://au.linkedin.com/?trk=guest_homepage-basic_nav-header-logo" class="social__icon--link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/" class="social__icon--link" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <script src="app.js"></script>
+    </body>
+    </html>
+    

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RISE Tutoring</title>
+    <link rel="stylesheet" href="limits.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- NAVBAR> SAME FOR EVERY PAGE. -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-leaf"></i> RISE</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/learn.html" class="navbar__links">
+                        Learn
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">
+                        About
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="enrol.html" class="button">
+                        Sign up
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="der__container">
+        <h1>LIMITS</h1>
+        <div class="ytvideo__der">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YNstP0ESndU?si=_m8Y20zRVY2DsHm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <button class="derq__btn"><a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-4/quiz/ab-limits-new-quiz-1">TAKE A LIMITS QUIZ</a></button>
+        <h3>
+            Limits are fundamental to calculus and mathematical analysis and are used to define continuity, derivatives, and integrals. Understanding limits is crucial for grasping the behavior of functions as they approach specific points or infinity.
+            <br>
+            <br><u>What is a Limit?</u>
+            <br>
+                    <br>&ensp;A limit is the value that a function (or sequence) "approaches" as the input (or index) approaches some value.
+                    <br>&ensp;Example: The limit of f(x) as x approaches a is L, written as lim<sub>x→a</sub> f(x) = L.
+                    <br>&ensp;&ensp;&ensp;&bull; This means that as x gets closer to a, f(x) gets closer to L.
+                    <br>
+                    <br><u>Basic Properties of Limits:</u>
+                    <br>
+                    <br>&ensp;1. **Limit Laws**:
+                    <br>&ensp;&ensp;&ensp;&bull; **Sum Rule**: lim<sub>x→a</sub> [f(x) + g(x)] = lim<sub>x→a</sub> f(x) + lim<sub>x→a</sub> g(x)
+                    <br>&ensp;&ensp;&ensp;&bull; **Difference Rule**: lim<sub>x→a</sub> [f(x) - g(x)] = lim<sub>x→a</sub> f(x) - lim<sub>x→a</sub> g(x)
+                    <br>&ensp;&ensp;&ensp;&bull; **Product Rule**: lim<sub>x→a</sub> [f(x) * g(x)] = lim<sub>x→a</sub> f(x) * lim<sub>x→a</sub> g(x)
+                    <br>&ensp;&ensp;&ensp;&bull; **Quotient Rule**: lim<sub>x→a</sub> [f(x) / g(x)] = lim<sub>x→a</sub> f(x) / lim<sub>x→a</sub> g(x), provided lim<sub>x→a</sub> g(x) ≠ 0
+                    <br>&ensp;&ensp;&ensp;&bull; **Power Rule**: lim<sub>x→a</sub> [f(x)]<sup>n</sup> = [lim<sub>x→a</sub> f(x)]<sup>n</sup>
+                    <br>
+                    <br>&ensp;2. **One-Sided Limits**:
+                    <br>&ensp;&ensp;&ensp;&bull; **Right-Hand Limit**: lim<sub>x→a<sup>+</sup></sub> f(x) = L
+                    <br>&ensp;&ensp;&ensp;&bull; **Left-Hand Limit**: lim<sub>x→a<sup>-</sup></sub> f(x) = L
+                    <br>&ensp;&ensp;&ensp;&bull; If both one-sided limits exist and are equal, the two-sided limit exists.
+                    <br>
+                    <br>&ensp;3. **Infinite Limits**:
+                    <br>&ensp;&ensp;&ensp;&bull; If f(x) increases without bound as x approaches a, we write lim<sub>x→a</sub> f(x) = ∞.
+                    <br>&ensp;&ensp;&ensp;&bull; If f(x) decreases without bound as x approaches a, we write lim<sub>x→a</sub> f(x) = -∞.
+                    <br>
+                    <br><u>Techniques for Evaluating Limits:</u>
+                    <br>
+                    <br>&ensp;1. **Direct Substitution**: Substitute the value of x into the function.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: Find lim<sub>x→2</sub> (3x + 5).
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: Substitute x = 2 → 3(2) + 5 = 11.
+                    <br>
+                    <br>&ensp;2. **Factoring**: Factor the function and simplify.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: Find lim<sub>x→3</sub> [(x² - 9) / (x - 3)].
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: Factor to get lim<sub>x→3</sub> [(x - 3)(x + 3) / (x - 3)] = lim<sub>x→3</sub> (x + 3) = 6.
+                    <br>
+                    <br>&ensp;3. **Rationalizing**: Multiply by the conjugate if dealing with square roots.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: Find lim<sub>x→4</sub> [(√x - 2) / (x - 4)].
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: Multiply by (√x + 2) / (√x + 2) to get lim<sub>x→4</sub> [(x - 4) / ((x - 4)(√x + 2))] = lim<sub>x→4</sub> [1 / (√x + 2)] = 1/4.
+                    <br>
+                    <br>&ensp;4. **L'Hôpital's Rule**: Use for indeterminate forms (0/0 or ∞/∞).
+                    <br>&ensp;&ensp;&ensp;&bull; Example: Find lim<sub>x→0</sub> [sin(x) / x].
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: Differentiate numerator and denominator to get lim<sub>x→0</sub> [cos(x) / 1] = 1.
+                    <br>
+                    <br>&ensp;5. **Squeeze Theorem**: If f(x) ≤ g(x) ≤ h(x) and lim<sub>x→a</sub> f(x) = lim<sub>x→a</sub> h(x) = L, then lim<sub>x→a</sub> g(x) = L.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: Find lim<sub>x→0</sub> [x² sin(1/x)].
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: Since -x² ≤ x² sin(1/x) ≤ x² and both -x² and x² approach 0 as x approaches 0, by the Squeeze Theorem, lim<sub>x→0</sub> [x² sin(1/x)] = 0.
+                    <br>
+                    <br><u>Limits at Infinity:</u>
+                    <br>
+                    <br>&ensp;1. **Limits of Rational Functions**: Compare degrees of numerator and denominator.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: Find lim<sub>x→∞</sub> [3x² / (2x² + 1)].
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: Divide numerator and denominator by x²: lim<sub>x→∞</sub> [3 / (2 + 1/x²)] = 3/2.
+                    <br>
+                    <br>&ensp;2. **Horizontal Asymptotes**: If lim<sub>x→∞</sub> f(x) = L or lim<sub>x→-∞</sub> f(x) = L, then y = L is a horizontal asymptote.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: For f(x) = (2x) / (x + 1), as x → ∞, f(x) → 2, so y = 2 is a horizontal asymptote.
+                    <br>
+                    <br><u>Applications of Limits:</u>
+                    <br>
+                    <br>&ensp;1. **Continuity**: A function f(x) is continuous at x = a if lim<sub>x→a</sub> f(x) = f(a).
+                    <br>&ensp;&ensp;&ensp;&bull; Example: Determine if f(x) = x² is continuous at x = 2.
+                    <br>&ensp;&ensp;&ensp;&bull; Solution: lim<sub>x→2</sub> x² = 4 and f(2) = 4, so f(x) is continuous at x = 2.
+                    <br>
+                    <br>&ensp;2. **Derivatives**: The derivative of f(x) at x = a is the limit of the average rate of change as the interval approaches zero.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: f'(a) = lim<sub>h→0</sub> [f(a + h) - f(a)] / h
+                    <br>
+                    <br>&ensp;3. **Integral Calculus**: Definite integrals are defined as limits of Riemann sums.
+                    <br>&ensp;&ensp;&ensp;&bull; Example: ∫<sub>a</sub><sup>b</sup> f(x) dx = lim<sub>n→∞</sub> Σ [f(x<sub>i</sub>) Δx]
+                    <br>
+                    <br><u>Practice Problems:</u>
+                    <br>
+                    <br>1. Find lim<sub>x→3</sub> (x² - 9) / (x - 3).
+                    <br>2. Evaluate lim<sub>x→0</sub> sin(x) / x.
+                    <br>3. Determine lim<sub>x→∞</sub> (5x - 2) / (3x + 4).
+                    <br>4. Use L'Hôpital's Rule to find lim<sub>x→0</sub> (e<sup>x</sup> - 1) / x.
+                    <br>5. Apply the Squeeze Theorem to find lim<sub>x→0</sub> x² cos(1/x).
+                    <br>
+                    <br><u>Tips and Tricks:</u>
+                    <br>
+                    <br>&ensp;&bull; Always simplify the function if possible before taking the limit.
+                    <br>&ensp;&bull; Familiarize yourself with common limit forms and techniques.
+                    <br>&ensp;&bull; Practice using different methods to evaluate limits to build proficiency.
+        </h3>
+    </div>
+
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Algebra</h2>
+                    <a href="factorisation.html">Factorisation</a>
+                    <a href="polynomials.html">Polynomials</a>
+                    <a href="arithmetics.html">Basic Arithmetics</a>
+                    <a href="simplification.html">Simplification</a>
+                    <a href="exponentials.html">Exponentials</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Calculus</h2>
+                    <a href="derivatives.html">Derivatives</a>
+                    <a href="integration.html">Integration</a>
+                    <a href="integration2.html">Further Integration</a>
+                    <a href="de.html">Differential Equations</a>
+                    <a href="limits.html">Limits</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Quiz</h2>
+                    <a href="dq.html">Daily Quiz</a>
+                    <a href="algq.html">Algebra</a>
+                    <a href="calcq.html">Calculus</a>
+                    <a href="trigq.html">Trigonometry</a>
+                    <a href="gmq.html">General Math</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="/">Website</a>
+                    <a href="careers.html">Careers</a>
+                </div>
+            </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><i class="fa-solid fa-leaf"></i>RISE</a>
+                </div>
+                <p class="website__rights">© RISE 2023. All rights reserved </p>
+                <div class="social__icons">
+                    <a href="https://www.facebook.com/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="social__icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/?lang=en" class="social__icon--link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://au.linkedin.com/?trk=guest_homepage-basic_nav-header-logo" class="social__icon--link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/" class="social__icon--link" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <script src="app.js"></script>
+    </body>
+    </html>
+    
